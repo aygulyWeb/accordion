@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+
+.accordion {
+	margin: 0 auto;
+	max-width: 500px;
+	padding-top: 50px;
+}
+.accordion-box:hover {
+	cursor: pointer;
+}
+
+.accordion-title {
+	background-color: #eee;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.accordion-content {
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 0.5s linear;
+	height: 0;
+	overflow: hidden;
+}
+.active .accordion-content {
+	height: 200px;
+	overflow: visible;
+}
+.accordion-icon {
+	font-size: 18px;
+}
